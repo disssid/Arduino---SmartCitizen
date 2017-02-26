@@ -41,7 +41,7 @@ static char* mySSID[networks]      = {
   "SSID"
 };
 static char* myPassword[networks]  = {
-  "Password"
+  "Pasword"
 };
 static char* wifiEncript[networks] = {
   WPA2
@@ -222,22 +222,22 @@ static char buffer[buffer_length];
 
 // Basic Server Posts to the SmartCitizen Platform - EndPoint: http://data.smartcitizen.me/add
 static char* WEB[7] = {
-  "local IP of the server",
+  "local ip address of the server",
   "PUT /add.php HTTP/1.1",
-  "\nHost: data.smartcitizen.me",
-  "\nUser-Agent: SmartCitizen",
-  "\nX-SmartCitizenMacADDR: ",
+  "\r\nHost: 10.131.214.126",
+  "\r\nUser-Agent: SmartCitizen",
+  "\r\nX-SmartCitizenMacADDR: ",
   //"X-SmartCitizenApiKey: ",
-  "\nX-SmartCitizenVersion: ",
-  "\nX-SmartCitizenData: "
+  "\r\nX-SmartCitizenVersion: ",
+  "\r\nX-SmartCitizenData: "
 };
 
 // Time server request -  EndPoint: http://data.smartcitizen.me/datetime
 static char* WEBTIME[3] = {
   /*Servidor de tiempo*/
-  "GET /datetime.php HTTP/1.1\n",
-  "Host: data.smartcitizen.me \n",
-  "User-Agent: SmartCitizen \n\n"
+  "GET /datetime.php HTTP/1.1\r\n",
+  "Host: 10.131.214.126 \r\n",
+  "User-Agent: SmartCitizen \r\n\r\n"
 };
 
 // Data JSON structure
