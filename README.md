@@ -22,3 +22,5 @@ static char* WEB[7] = {
 ```
 
 PS : As we are doing a manual GET/PUT the interpretation of these on a Windows Apache server is different compared to Ubuntu and hence the need to add \r.
+
+Updated add.php to save data to multiple csv files based on the User-Agent parameter sent from the board.
