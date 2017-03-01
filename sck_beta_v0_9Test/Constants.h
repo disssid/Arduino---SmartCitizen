@@ -38,10 +38,10 @@
 #define networks 1
 #if (networks > 0)
 static char* mySSID[networks]      = {
-  "SSID"
+  "Apartment12"
 };
 static char* myPassword[networks]  = {
-  "Pasword"
+  "C!afl1n12@pt"
 };
 static char* wifiEncript[networks] = {
   WPA2
@@ -88,8 +88,8 @@ static char* antennaExt[networks]  = {
 
 */
 
-#define DEFAULT_TIME_UPDATE  1    //Time between update and update
-#define MIN_TIME_UPDATE      1     //Minimum time between updates (minimum time to read all the sensors)
+#define DEFAULT_TIME_UPDATE  0   //Time between update and update
+#define MIN_TIME_UPDATE      0     //Minimum time between updates (minimum time to read all the sensors)
 #define MAX_TIME_UPDATE      1   //Max time between updates (one hour)
 #define DEFAULT_MIN_UPDATES  1      //Minimum number of updates before posting
 #define POST_MAX             20     //Max number of postings at a time
@@ -222,7 +222,7 @@ static char buffer[buffer_length];
 
 // Basic Server Posts to the SmartCitizen Platform - EndPoint: http://data.smartcitizen.me/add
 static char* WEB[7] = {
-  "local ip address of the server",
+  "192.168.0.14",
   "PUT /add.php HTTP/1.1",
   "\r\nHost: 10.131.214.126",
   "\r\nUser-Agent: SmartCitizen",

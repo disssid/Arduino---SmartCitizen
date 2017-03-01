@@ -145,7 +145,7 @@ class SCKSensorData
     
     public function noiseConversion($rawSound)
     {
-        $dbTable = json_decode(file_get_contents("../sensors/db.json"), true);
+        $dbTable = json_decode(file_get_contents("./sensors/db.json"), true);
         return round(self::tableCalibration($dbTable, $rawSound), 2);
     }
     

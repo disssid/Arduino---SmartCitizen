@@ -293,7 +293,7 @@ void SCKServer::send(boolean sleep, boolean *wait_moment, long *value, char *tim
             int cycles = cycles = updates/POST_MAX;;
             if (updates > POST_MAX) 
               {
-                for (int i=0; i<cycles; i++)
+                for (int i=0; i<=cycles; i++)
                 {
                   connect();
                   json_update(POST_MAX, value, tmpTime, false);
