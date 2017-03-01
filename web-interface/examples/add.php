@@ -22,7 +22,8 @@
     //echo "this is a put request\n";
     //parse_str(file_get_contents("php://input"),$post_vars);
     //echo "data".$post_vars;}
-    
+    $board_name = $headers['User-Agent'];
+    echo $board;
     $data = $headers['X-SmartCitizenData'];
   
     $datapoints = json_decode($data, true);
@@ -33,8 +34,7 @@
     }
 
     $csv .= PHP_EOL;
-
-    file_put_contents('./data.csv', $csv, FILE_APPEND);
+    file_put_contents('./'.$board_name.'.csv', $csv, FILE_APPEND);
     
    
   ?>
